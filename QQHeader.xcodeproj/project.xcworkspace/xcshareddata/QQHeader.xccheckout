@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>64644F63-5551-4DB4-97F9-EA9A8A6B8C3B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>QQHeader</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9BE7AFF3-5D75-4EB7-A985-E54F38B3BFE6</key>
+		<string>https://github.com/itlijunjie/QQHeader.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>QQHeader.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9BE7AFF3-5D75-4EB7-A985-E54F38B3BFE6</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/itlijunjie/QQHeader.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9BE7AFF3-5D75-4EB7-A985-E54F38B3BFE6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9BE7AFF3-5D75-4EB7-A985-E54F38B3BFE6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>QQHeader</string>
+		</dict>
+	</array>
+</dict>
+</plist>

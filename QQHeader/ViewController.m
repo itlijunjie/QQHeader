@@ -38,7 +38,6 @@
     CustomView1 *view1 = [[CustomView1 alloc] initWithFrame:CGRectMake(0, 0, viewwh, viewwh)];
     view1.center = CGPointMake(ViewOffset + viewwh/2, viewwh/2);
     
-    
     CustomView2 *view2 = [[CustomView2 alloc] initWithFrame:CGRectMake(0, 0, viewwh, viewwh)];
     view2.center = CGPointMake(viewwh/2, viewwh/2);
     

@@ -24,37 +24,47 @@
 {
     [super viewDidLoad];
     
-//    self.view.backgroundColor = [UIColor brownColor];
-//    
-//    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(20, 100, viewwh + ViewOffset, viewwh + ViewOffset)];
-//    
-//    view.backgroundColor = [UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1.0];
-//    
-//    CustomView *view0 = [[CustomView alloc] initWithFrame:CGRectMake(0, 0, viewwh, viewwh)];
-//    view0.center = CGPointMake(viewwh/2 + ViewOffset, viewwh/2 + ViewOffset);
-//    
-//    CustomView1 *view1 = [[CustomView1 alloc] initWithFrame:CGRectMake(0, 0, viewwh, viewwh)];
-//    view1.center = CGPointMake(ViewOffset + viewwh/2, viewwh/2);
-//    
-//    CustomView2 *view2 = [[CustomView2 alloc] initWithFrame:CGRectMake(0, 0, viewwh, viewwh)];
-//    view2.center = CGPointMake(viewwh/2, viewwh/2);
-//    
-//    CustomView3 *view3 = [[CustomView3 alloc] initWithFrame:CGRectMake(0, 0, viewwh, viewwh)];
-//    view3.center = CGPointMake(viewwh/2, viewwh/2 + ViewOffset);
-//    
-//    [view addSubview:view0];
-//    [view addSubview:view1];
-//    [view addSubview:view2];
-//    [view addSubview:view3];
-//    
-//    [view.layer addAnimation:[self scaleAnimation] forKey:@"transform"];
-//    
-//    [self.view addSubview:view];
+    [self.view addSubview:[self getView2]];
+}
+
+- (UIView *)getView2 {
     
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(20, 100, viewwh + ViewOffset, viewwh + ViewOffset)];
+    CGFloat diameter = (140 + 140 - sqrtf(2) * 140);
     
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, viewwh + ViewOffset, viewwh + ViewOffset)];
     view.center = self.view.center;
+    view.backgroundColor = [UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1.0];
     
+    CustomLayer *layer0 = [CustomLayer layer];
+    layer0.imageName = @"0.png";
+    layer0.isClip = NO;
+    layer0.scale = diameter / 70;
+    layer0.frame = [self getRect:CGPointMake(viewwh - sqrtf(2) * diameter / 4, viewwh - sqrtf(2) * diameter / 4) size:CGSizeMake(diameter, diameter)];
+    [view.layer addSublayer:layer0];
+    [layer0 setNeedsDisplay];
+    
+    CustomLayer *layer1 = [CustomLayer layer];
+    layer1.imageName = @"1.png";
+    layer1.degrees = 180 - 45;
+    layer1.scale = diameter / 70;
+    layer1.frame = [self getRect:CGPointMake(viewwh + sqrtf(2) * diameter / 4, viewwh + sqrtf(2) * diameter / 4) size:CGSizeMake(diameter, diameter)];
+    [view.layer addSublayer:layer1];
+    [layer1 setNeedsDisplay];
+
+    return view;
+}
+
+- (UIView *)getView3 {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, viewwh + ViewOffset, viewwh + ViewOffset)];
+    view.center = self.view.center;
+    view.backgroundColor = [UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1.0];
+    
+    return view;
+}
+
+- (UIView *)getView4 {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, viewwh + ViewOffset, viewwh + ViewOffset)];
+    view.center = self.view.center;
     view.backgroundColor = [UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1.0];
     
     CustomLayer *layer0 = [CustomLayer layer];
@@ -62,7 +72,6 @@
     layer0.frame = [self getRect:CGPointMake(viewwh/2, viewwh/2) size:CGSizeMake(viewwh, viewwh)];
     [view.layer addSublayer:layer0];
     [layer0 setNeedsDisplay];
-    
     
     CustomLayer *layer1 = [CustomLayer layer];
     layer1.imageName = @"1.png";
@@ -84,15 +93,19 @@
     layer3.frame = [self getRect:CGPointMake(viewwh/2, viewwh/2 + ViewOffset) size:CGSizeMake(viewwh, viewwh)];
     [view.layer addSublayer:layer3];
     [layer3 setNeedsDisplay];
-    
-//    [view.layer addAnimation:[self scaleAnimation] forKey:@"transform"];
+    return view;
+}
 
-    [self.view addSubview:view];
+- (UIView *)getView5 {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, viewwh + ViewOffset, viewwh + ViewOffset)];
+    view.center = self.view.center;
+    view.backgroundColor = [UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1.0];
+    
+    return view;
 }
 
 - (IBAction)btnAction:(id)sender {
     NSLog(@"aa");
-    
 }
 
 - (CAAnimation*)scaleAnimation{

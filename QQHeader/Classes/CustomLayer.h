@@ -13,5 +13,6 @@
 @property (nonatomic, assign) NSInteger degrees;
 @property (nonatomic, copy) NSString *imageName;
 @property (nonatomic, assign) CGFloat scale;
+@property (nonatomic, assign) BOOL isClip;
 
 @end

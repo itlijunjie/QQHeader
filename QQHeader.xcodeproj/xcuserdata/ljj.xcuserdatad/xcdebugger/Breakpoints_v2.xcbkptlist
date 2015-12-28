@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "QQHeader/Classes/CustomLayer.m"
-            timestampString = "473004361.202553"
+            filePath = "QQHeader/ViewController.m"
+            timestampString = "473011526.692989"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "-drawInContext:"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "-getView2"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

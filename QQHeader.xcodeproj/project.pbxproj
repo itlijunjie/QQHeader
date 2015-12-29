@@ -68,6 +68,7 @@
 		0EE83BA319A89E1D000BFB91 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		0EE83BB419A8A0E4000BFB91 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0EEAC8DD1C32906B00279F20 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0EEAC8DF1C3294CB00279F20 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		0EE83B5E19A89E08000BFB91 = {
 			isa = PBXGroup;
 			children = (
+				0EEAC8DF1C3294CB00279F20 /* README.md */,
 				0EE83BB419A8A0E4000BFB91 /* LICENSE */,
 				0EE83BBA19A8A129000BFB91 /* Classes */,
 				0EE83BB619A8A0EE000BFB91 /* Resources */,

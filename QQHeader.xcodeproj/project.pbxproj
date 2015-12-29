@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EAB463C1C31098300F87C6B /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EAB463B1C31098300F87C6B /* ViewController1.m */; };
 		0EAB463F1C310B4000F87C6B /* CustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EAB463E1C310B4000F87C6B /* CustomLayer.m */; };
 		0EE83B6B19A89E08000BFB91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE83B6A19A89E08000BFB91 /* Foundation.framework */; };
 		0EE83B6D19A89E08000BFB91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE83B6C19A89E08000BFB91 /* CoreGraphics.framework */; };
@@ -28,6 +27,7 @@
 		0EE83BA619A89E1D000BFB91 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EE83BA219A89E1D000BFB91 /* 2.png */; };
 		0EE83BA719A89E1D000BFB91 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EE83BA319A89E1D000BFB91 /* 3.png */; };
 		0EE83BB519A8A0E4000BFB91 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0EE83BB419A8A0E4000BFB91 /* LICENSE */; };
+		0EEAC8DE1C32906B00279F20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EEAC8DD1C32906B00279F20 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EAB463A1C31098300F87C6B /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
-		0EAB463B1C31098300F87C6B /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
 		0EAB463D1C310B4000F87C6B /* CustomLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLayer.h; sourceTree = "<group>"; };
 		0EAB463E1C310B4000F87C6B /* CustomLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLayer.m; sourceTree = "<group>"; };
 		0EE83B6719A89E08000BFB91 /* QQHeader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQHeader.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +67,7 @@
 		0EE83BA219A89E1D000BFB91 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		0EE83BA319A89E1D000BFB91 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		0EE83BB419A8A0E4000BFB91 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0EEAC8DD1C32906B00279F20 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,10 +133,9 @@
 				0EE83B7919A89E08000BFB91 /* AppDelegate.h */,
 				0EE83B7A19A89E08000BFB91 /* AppDelegate.m */,
 				0EE83B7C19A89E08000BFB91 /* Main.storyboard */,
+				0EEAC8DD1C32906B00279F20 /* LaunchScreen.storyboard */,
 				0EE83B7F19A89E08000BFB91 /* ViewController.h */,
 				0EE83B8019A89E08000BFB91 /* ViewController.m */,
-				0EAB463A1C31098300F87C6B /* ViewController1.h */,
-				0EAB463B1C31098300F87C6B /* ViewController1.m */,
 				0EE83B8219A89E08000BFB91 /* Images.xcassets */,
 				0EE83B7119A89E08000BFB91 /* Supporting Files */,
 			);
@@ -271,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EEAC8DE1C32906B00279F20 /* LaunchScreen.storyboard in Resources */,
 				0EE83BA619A89E1D000BFB91 /* 2.png in Resources */,
 				0EE83BA419A89E1D000BFB91 /* 0.png in Resources */,
 				0EE83BB519A8A0E4000BFB91 /* LICENSE in Resources */,
@@ -298,7 +297,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EE83B8119A89E08000BFB91 /* ViewController.m in Sources */,
-				0EAB463C1C31098300F87C6B /* ViewController1.m in Sources */,
 				0EAB463F1C310B4000F87C6B /* CustomLayer.m in Sources */,
 				0EE83B7B19A89E08000BFB91 /* AppDelegate.m in Sources */,
 				0EE83B7719A89E08000BFB91 /* main.m in Sources */,

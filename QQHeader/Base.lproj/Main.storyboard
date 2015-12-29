@@ -1,26 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Ruf-Ug-29s">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Yfy-f9-loJ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="axx-uQ-lCv">
-            <objects>
-                <navigationController id="Ruf-Ug-29s" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a3n-pB-6bF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Yfy-f9-loJ" kind="relationship" relationship="rootViewController" id="KSB-mv-xZN"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fKB-YR-xO7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-226" y="147"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="6Zh-sc-zUa">
             <objects>
@@ -32,16 +16,6 @@
                     <view key="view" contentMode="scaleToFill" id="Z4O-AI-4LD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03Q-Wu-Mub">
-                                <rect key="frame" x="0.0" y="64" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="btnAction:" destination="Yfy-f9-loJ" eventType="touchUpInside" id="w1x-zA-ogT"/>
-                                    <segue destination="jGC-8r-kmx" kind="push" id="x3L-yh-5cY"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="OVQ-0c-Trp"/>
@@ -49,33 +23,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6oz-0Q-s1i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="166" y="147"/>
-        </scene>
-        <!--View Controller1-->
-        <scene sceneID="DRr-9Z-m37">
-            <objects>
-                <viewController id="jGC-8r-kmx" customClass="ViewController1" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jMg-gw-r87"/>
-                        <viewControllerLayoutGuide type="bottom" id="4xs-9C-d2d"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mhz-ow-gv0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="显示设计" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsf-GA-XJr">
-                                <rect key="frame" x="126" y="64" width="68" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Imk-LK-Tv2"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OYf-f4-wk4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="567" y="147"/>
         </scene>
     </scenes>
 </document>

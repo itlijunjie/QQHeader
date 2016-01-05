@@ -1,17 +1,26 @@
 //
-//  CustomLayer.m
+//  JJCustomLayer.m
 //  QQHeader
 //
 //  Created by lijunjie on 15/12/28.
 //  Copyright © 2015年 ljj. All rights reserved.
 //
 
-#import "CustomLayer.h"
+#import "JJCustomLayer.h"
 
 #define headerClipHalfAngle 30  //裁剪弧度的一半的度数
 static inline float radians(double degrees) { return degrees * M_PI / 180; }
 
-@implementation CustomLayer
+@interface JJCustomLayer ()
+
+@property (nonatomic, assign) NSInteger degrees;
+@property (nonatomic, strong) UIImage *image;
+@property (nonatomic, assign) CGFloat scale;
+@property (nonatomic, assign) BOOL isClip;
+
+@end
+
+@implementation JJCustomLayer
 
 - (instancetype)init
 {
@@ -22,6 +31,21 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
         _isClip = YES;
     }
     return self;
+}
+
++ (JJCustomLayer *)createWithImage:(UIImage *)image scale:(CGFloat)scale degrees:(NSInteger)degrees isClip:(BOOL)isClip
+{
+    JJCustomLayer *res = [JJCustomLayer layer];
+    [res updateWithImage:image scale:scale degrees:degrees isClip:isClip];
+    return res;
+}
+
+- (void)updateWithImage:(UIImage *)image scale:(CGFloat)scale degrees:(NSInteger)degrees isClip:(BOOL)isClip;
+{
+    _degrees = degrees;
+    _scale = scale;
+    _isClip = isClip;
+    _image = image;
 }
 
 - (void)drawInContext:(CGContextRef)context
@@ -51,9 +75,8 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
     CGContextClosePath(context);
     CGContextClip(context);
     CGContextScaleCTM(context, _scale, _scale);
-    UIImage *image2=[UIImage imageNamed:_imageName];
     UIGraphicsPushContext( context );
-    [image2 drawInRect:CGRectMake(0, 0, image2.size.width, image2.size.height)];
+    [_image drawInRect:CGRectMake(0, 0, _image.size.width, _image.size.height)];
     UIGraphicsPopContext();
 }
 

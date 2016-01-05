@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EAB463F1C310B4000F87C6B /* CustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EAB463E1C310B4000F87C6B /* CustomLayer.m */; };
+		0E7E59631C3BC27500D67F5B /* JJHeaders.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E59621C3BC27500D67F5B /* JJHeaders.m */; };
+		0EAB463F1C310B4000F87C6B /* JJCustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EAB463E1C310B4000F87C6B /* JJCustomLayer.m */; };
 		0EE83B6B19A89E08000BFB91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE83B6A19A89E08000BFB91 /* Foundation.framework */; };
 		0EE83B6D19A89E08000BFB91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE83B6C19A89E08000BFB91 /* CoreGraphics.framework */; };
 		0EE83B6F19A89E08000BFB91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE83B6E19A89E08000BFB91 /* UIKit.framework */; };
@@ -41,8 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EAB463D1C310B4000F87C6B /* CustomLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLayer.h; sourceTree = "<group>"; };
-		0EAB463E1C310B4000F87C6B /* CustomLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLayer.m; sourceTree = "<group>"; };
+		0E7E59611C3BC27500D67F5B /* JJHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJHeaders.h; sourceTree = "<group>"; };
+		0E7E59621C3BC27500D67F5B /* JJHeaders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJHeaders.m; sourceTree = "<group>"; };
+		0EAB463D1C310B4000F87C6B /* JJCustomLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCustomLayer.h; sourceTree = "<group>"; };
+		0EAB463E1C310B4000F87C6B /* JJCustomLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCustomLayer.m; sourceTree = "<group>"; };
 		0EE83B6719A89E08000BFB91 /* QQHeader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQHeader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE83B6A19A89E08000BFB91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0EE83B6C19A89E08000BFB91 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -188,8 +191,10 @@
 		0EE83BBA19A8A129000BFB91 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0EAB463D1C310B4000F87C6B /* CustomLayer.h */,
-				0EAB463E1C310B4000F87C6B /* CustomLayer.m */,
+				0E7E59611C3BC27500D67F5B /* JJHeaders.h */,
+				0E7E59621C3BC27500D67F5B /* JJHeaders.m */,
+				0EAB463D1C310B4000F87C6B /* JJCustomLayer.h */,
+				0EAB463E1C310B4000F87C6B /* JJCustomLayer.m */,
 			);
 			name = Classes;
 			path = QQHeader/Classes;
@@ -299,7 +304,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EE83B8119A89E08000BFB91 /* ViewController.m in Sources */,
-				0EAB463F1C310B4000F87C6B /* CustomLayer.m in Sources */,
+				0E7E59631C3BC27500D67F5B /* JJHeaders.m in Sources */,
+				0EAB463F1C310B4000F87C6B /* JJCustomLayer.m in Sources */,
 				0EE83B7B19A89E08000BFB91 /* AppDelegate.m in Sources */,
 				0EE83B7719A89E08000BFB91 /* main.m in Sources */,
 			);

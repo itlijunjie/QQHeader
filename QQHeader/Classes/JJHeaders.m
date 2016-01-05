@@ -54,7 +54,7 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
     CGFloat scale = diameter / imageWH;
     
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, headerWH, headerWH)];
-    view.backgroundColor = [UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1.0];
+    view.backgroundColor = [UIColor clearColor];
     
     JJCustomLayer *layer0 = [JJCustomLayer createWithImage:[UIImage imageNamed:@"0.png"] scale:scale degrees:0 isClip:NO];
     layer0.frame = [JJHeaders getRect:CGPointMake(r, r) size:CGSizeMake(diameter, diameter)];
@@ -71,7 +71,7 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
     CGFloat scale = diameter / imageWH;
     
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, headerWH, headerWH)];
-    view.backgroundColor = [UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1.0];
+    view.backgroundColor = [UIColor clearColor];
     
     JJCustomLayer *layer0 = [JJCustomLayer createWithImage:[UIImage imageNamed:@"0.png"] scale:scale degrees:0 isClip:NO];
     layer0.frame = [JJHeaders getRect:CGPointMake(r, r) size:CGSizeMake(diameter, diameter)];
@@ -92,13 +92,13 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
     CGFloat scale = diameter / imageWH;
     
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, headerWH, headerWH)];
-    view.backgroundColor = [UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1.0];
+    view.backgroundColor = [UIColor clearColor];
     
     CALayer *layer = [CALayer layer];
     layer.frame = CGRectMake(0, 0, 2 * diameter, diameter + sqrtf(3) / 2 * diameter);
     
     CGPoint center0 = CGPointMake(diameter, diameter / 2);
-    JJCustomLayer *layer0 = [JJCustomLayer createWithImage:[UIImage imageNamed:@"0.png"] scale:0.5 degrees:30 isClip:YES];
+    JJCustomLayer *layer0 = [JJCustomLayer createWithImage:[UIImage imageNamed:@"0.png"] scale:scale degrees:30 isClip:YES];
     layer0.frame = [JJHeaders getRect:center0 size:CGSizeMake(diameter, diameter)];
     [layer addSublayer:layer0];
     [layer0 setNeedsDisplay];
@@ -129,7 +129,7 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
     CGFloat scale = diameter / imageWH;
     
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, headerWH, headerWH)];
-    view.backgroundColor = [UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1.0];
+    view.backgroundColor = [UIColor clearColor];
     
     CGPoint center0 = CGPointMake(r, r);
     JJCustomLayer *layer0 = [JJCustomLayer createWithImage:[UIImage imageNamed:@"0.png"] scale:scale degrees:0 isClip:YES];
@@ -167,7 +167,7 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
     layer.frame = CGRectMake(0, 0,headerWH, r / tan(radians(36)) + r / sin(radians(36)) + diameter);
     
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, headerWH, headerWH)];
-    view.backgroundColor = [UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1.0];
+    view.backgroundColor = [UIColor clearColor];
     
     CGPoint center0 = CGPointMake(headerWH / 2, r);
     JJCustomLayer *layer0 = [JJCustomLayer createWithImage:[UIImage imageNamed:@"0.png"] scale:scale degrees:54 isClip:YES];

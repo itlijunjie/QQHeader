@@ -52,3 +52,5 @@ Carthage/Build
 
 fastlane/report.xml
 *.xcuserstate
+
+*.xcuserstate

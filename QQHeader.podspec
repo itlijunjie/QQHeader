@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "QQHeader"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "一个高仿QQ讨论组Headers的实现"
 
   # This description is used to generate tags and improve search results.

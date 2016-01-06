@@ -21,7 +21,7 @@
 {
     [super viewDidLoad];
     
-    CGFloat viewWH = 94;
+    CGFloat viewWH = 140;
     CGFloat imageWH = 140;
     
     UIView *view1 = [JJHeaders createHeaderView:viewWH

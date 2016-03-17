@@ -1,26 +1,22 @@
 {
   "name": "QQHeader",
-  "version": "0.0.2",
-  "summary": "一个高仿QQ讨论组Headers的实现",
-  "homepage": "https://github.com/itlijunjie/QQHeader",
-  "screenshots": "https://raw.githubusercontent.com/itlijunjie/QQHeader/master/ScreenShot.png",
-  "license": {
-    "type": "GNU",
-    "file": "LICENSE"
-  },
+  "version": "0.0.3",
+  "summary": "QQHeader SDK 0.0.3 for iOS",
+  "homepage": "https://github.com/itlijunjie/QQHeader.git",
   "authors": {
-    "Li Junjie": "itlijunjie@gmail.com"
+    "itlijunjie@gmail.com": "https://github.com/itlijunjie"
   },
   "platforms": {
-    "ios": "6.0"
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
   },
   "source": {
     "git": "https://github.com/itlijunjie/QQHeader.git",
-    "tag": "0.0.2"
+    "tag": "0.0.3"
   },
-  "source_files": [
-    "QQHeader/Classes",
-    "QQHeader/Classes/**/*.{h,m}"
-  ],
-  "frameworks": "QuartzCore"
+  "source_files": "QQHeader/Classes/**/*.{h,m}"
 }

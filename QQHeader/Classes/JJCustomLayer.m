@@ -7,8 +7,8 @@
 //
 
 #import "JJCustomLayer.h"
+#import "JJHeadersConfig.h"
 
-#define headerClipHalfAngle 30  //裁剪弧度的一半的度数
 static inline float radians(double degrees) { return degrees * M_PI / 180; }
 
 @interface JJCustomLayer ()
@@ -46,7 +46,6 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
     _scale = scale;
     _image = image;
     _isClip = isClip;
-//   _image = [UIImage imageWithData:UIImagePNGRepresentation(image) scale:1/scale];
 }
 
 - (void)drawInContext:(CGContextRef)context
@@ -61,23 +60,20 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
     transform = CGAffineTransformRotate(transform, radians(_degrees));
     transform = CGAffineTransformTranslate(transform, -center.x, -center.y);
     if (_isClip) {
-        CGPathAddArc(path, &transform, size.width / 2, size.height / 2, size.width / 2, radians((90 - headerClipHalfAngle)), radians(90 + headerClipHalfAngle), 1);
+        CGPathAddArc(path, &transform, size.width / 2, size.height / 2, size.width / 2, radians((90 - kHeaderClipHalfAngle)), radians(90 + kHeaderClipHalfAngle), 1);
         CGPathAddArcToPoint(path,&transform,
                             size.width / 2,
-                            size.height / 2 + (size.width / 2 * sin(radians(90 - headerClipHalfAngle)) - size.width / 2 * sin(radians(headerClipHalfAngle)) * tan(radians(headerClipHalfAngle))),
-                            size.width / 2 + size.width / 2 * sin(radians(headerClipHalfAngle)),
-                            size.height / 2 + size.width / 2 * sin(radians(90 - headerClipHalfAngle)),
+                            size.height / 2 + (size.width / 2 * sin(radians(90 - kHeaderClipHalfAngle)) - size.width / 2 * sin(radians(kHeaderClipHalfAngle)) * tan(radians(kHeaderClipHalfAngle))),
+                            size.width / 2 + size.width / 2 * sin(radians(kHeaderClipHalfAngle)),
+                            size.height / 2 + size.width / 2 * sin(radians(90 - kHeaderClipHalfAngle)),
                             size.width / 2);
     } else {
         CGPathAddArc(path, &transform, size.width / 2, size.height / 2, size.width / 2, radians((90)), radians(90 + 0.01), 1);
     }
-    
     CGContextAddPath(context, path);
     CGContextClosePath(context);
     CGContextClip(context);
-//    CGContextScaleCTM(context, _scale, _scale);
     UIGraphicsPushContext( context );
-//    [_image drawInRect:CGRectMake(0, 0, _image.size.width, _image.size.height)];
     [_image drawInRect:CGRectMake(0, 0, _image.size.width * _scale, _image.size.height * _scale)];
     UIGraphicsPopContext();
 }

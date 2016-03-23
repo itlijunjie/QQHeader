@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E10525B1CA227F0002E04F2 /* JJHeadersConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E10525A1CA227F0002E04F2 /* JJHeadersConfig.m */; };
 		0E7E59631C3BC27500D67F5B /* JJHeaders.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E59621C3BC27500D67F5B /* JJHeaders.m */; };
 		0EAB463F1C310B4000F87C6B /* JJCustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EAB463E1C310B4000F87C6B /* JJCustomLayer.m */; };
 		0EE83B6B19A89E08000BFB91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE83B6A19A89E08000BFB91 /* Foundation.framework */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E1052591CA227F0002E04F2 /* JJHeadersConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJHeadersConfig.h; sourceTree = "<group>"; };
+		0E10525A1CA227F0002E04F2 /* JJHeadersConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJHeadersConfig.m; sourceTree = "<group>"; };
 		0E48CE321C9A9B0600CB8FBD /* QQHeader.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = QQHeader.podspec; sourceTree = "<group>"; };
 		0E48CE331C9A9B0600CB8FBD /* QQHeader.podspec.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QQHeader.podspec.json; sourceTree = "<group>"; };
 		0E7E59611C3BC27500D67F5B /* JJHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJHeaders.h; sourceTree = "<group>"; };
@@ -199,6 +202,8 @@
 				0E7E59621C3BC27500D67F5B /* JJHeaders.m */,
 				0EAB463D1C310B4000F87C6B /* JJCustomLayer.h */,
 				0EAB463E1C310B4000F87C6B /* JJCustomLayer.m */,
+				0E1052591CA227F0002E04F2 /* JJHeadersConfig.h */,
+				0E10525A1CA227F0002E04F2 /* JJHeadersConfig.m */,
 			);
 			name = Classes;
 			path = QQHeader/Classes;
@@ -311,6 +316,7 @@
 				0E7E59631C3BC27500D67F5B /* JJHeaders.m in Sources */,
 				0EAB463F1C310B4000F87C6B /* JJCustomLayer.m in Sources */,
 				0EE83B7B19A89E08000BFB91 /* AppDelegate.m in Sources */,
+				0E10525B1CA227F0002E04F2 /* JJHeadersConfig.m in Sources */,
 				0EE83B7719A89E08000BFB91 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

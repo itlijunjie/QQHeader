@@ -46,10 +46,12 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
     _scale = scale;
     _image = image;
     _isClip = isClip;
+    self.contentsScale = 1/scale;
 }
 
 - (void)drawInContext:(CGContextRef)context
 {
+    [super drawInContext:context];
     CGContextSetRGBFillColor(context, 0, 0, 1, 1);
     CGMutablePathRef path = CGPathCreateMutable();
     CGRect bounds = self.bounds;
@@ -74,7 +76,7 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
     CGContextClosePath(context);
     CGContextClip(context);
     UIGraphicsPushContext( context );
-    [_image drawInRect:CGRectMake(0, 0, _image.size.width * _scale, _image.size.height * _scale)];
+    [_image drawInRect:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
     UIGraphicsPopContext();
 }
 

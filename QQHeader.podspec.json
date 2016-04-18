@@ -1,7 +1,7 @@
 {
   "name": "QQHeader",
-  "version": "0.0.3",
-  "summary": "QQHeader SDK 0.0.3 for iOS",
+  "version": "0.0.4",
+  "summary": "QQHeader SDK 0.0.4 for iOS",
   "homepage": "https://github.com/itlijunjie/QQHeader.git",
   "authors": {
     "itlijunjie@gmail.com": "https://github.com/itlijunjie"
@@ -16,7 +16,7 @@
   },
   "source": {
     "git": "https://github.com/itlijunjie/QQHeader.git",
-    "tag": "0.0.3"
+    "tag": "0.0.4"
   },
   "source_files": "QQHeader/Classes/**/*.{h,m}"
 }

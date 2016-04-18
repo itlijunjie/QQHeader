@@ -219,6 +219,7 @@
 				0EE83B6319A89E08000BFB91 /* Sources */,
 				0EE83B6419A89E08000BFB91 /* Frameworks */,
 				0EE83B6519A89E08000BFB91 /* Resources */,
+				0E01AEC41CC4EF3300377835 /* Update Bundle Version */,
 			);
 			buildRules = (
 			);
@@ -306,6 +307,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E01AEC41CC4EF3300377835 /* Update Bundle Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Bundle Version";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildPlist=${PROJECT_DIR}/${INFOPLIST_FILE}\nnewVersion=`/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$buildPlist\"\n# | /usr/bin/perl -pe 's/(\\d+\\.\\d+\\.)(\\d+)/$1.($2+1)/eg'`\necho $newVersion;\nnewVersion=$(($newVersion + 1))\n/usr/libexec/PListBuddy -c \"Set :CFBundleVersion $newVersion\" \"$buildPlist\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0EE83B6319A89E08000BFB91 /* Sources */ = {

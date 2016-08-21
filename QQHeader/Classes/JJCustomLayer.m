@@ -40,13 +40,13 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
     return res;
 }
 
-- (void)updateWithImage:(UIImage *)image scale:(CGFloat)scale degrees:(NSInteger)degrees isClip:(BOOL)isClip;
+- (void)updateWithImage:(UIImage *)image scale:(CGFloat)scale degrees:(NSInteger)degrees isClip:(BOOL)isClip
 {
     _degrees = degrees;
     _scale = scale;
-    _image = image;
+    _image = [UIImage imageWithCGImage:image.CGImage scale:1/scale orientation:image.imageOrientation];
     _isClip = isClip;
-    self.contentsScale = 1/scale;
+    self.contentsScale = 1 / scale;
 }
 
 - (void)drawInContext:(CGContextRef)context
@@ -72,11 +72,17 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
     } else {
         CGPathAddArc(path, &transform, size.width / 2, size.height / 2, size.width / 2, radians((90)), radians(90 + 0.01), 1);
     }
-    CGContextAddPath(context, path);
-    CGContextClosePath(context);
-    CGContextClip(context);
+    
+    UIGraphicsBeginImageContextWithOptions(self.frame.size, NO, [UIScreen mainScreen].scale);
+    UIBezierPath *bezierPath = [UIBezierPath bezierPathWithCGPath:path];
+    [bezierPath closePath];
+    [bezierPath addClip];
+    [_image drawAtPoint:CGPointZero];
+    UIImage *maskedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
     UIGraphicsPushContext( context );
-    [_image drawInRect:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+    [maskedImage drawInRect:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
     UIGraphicsPopContext();
 }
 

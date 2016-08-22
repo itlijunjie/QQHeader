@@ -15,7 +15,6 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
 
 @property (nonatomic, assign) NSInteger degrees;
 @property (nonatomic, strong) UIImage *image;
-@property (nonatomic, assign) CGFloat scale;
 @property (nonatomic, assign) BOOL isClip;
 
 @end
@@ -27,26 +26,24 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
     self = [super init];
     if (self) {
         _degrees = 0;
-        _scale = 1.0;
         _isClip = YES;
     }
     return self;
 }
 
-+ (JJCustomLayer *)createWithImage:(UIImage *)image scale:(CGFloat)scale degrees:(NSInteger)degrees isClip:(BOOL)isClip
++ (JJCustomLayer *)createWithImage:(UIImage *)image degrees:(NSInteger)degrees isClip:(BOOL)isClip
 {
     JJCustomLayer *res = [JJCustomLayer layer];
-    [res updateWithImage:image scale:scale degrees:degrees isClip:isClip];
+    [res updateWithImage:image degrees:degrees isClip:isClip];
     return res;
 }
 
-- (void)updateWithImage:(UIImage *)image scale:(CGFloat)scale degrees:(NSInteger)degrees isClip:(BOOL)isClip
+- (void)updateWithImage:(UIImage *)image degrees:(NSInteger)degrees isClip:(BOOL)isClip
 {
     _degrees = degrees;
-    _scale = scale;
-    _image = [UIImage imageWithCGImage:image.CGImage scale:1/scale orientation:image.imageOrientation];
+    _image = image;
     _isClip = isClip;
-    self.contentsScale = 1 / scale;
+    self.contentsScale = [UIScreen mainScreen].scale;
 }
 
 - (void)drawInContext:(CGContextRef)context
@@ -73,11 +70,12 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
         CGPathAddArc(path, &transform, size.width / 2, size.height / 2, size.width / 2, radians((90)), radians(90 + 0.01), 1);
     }
     
-    UIGraphicsBeginImageContextWithOptions(self.frame.size, NO, [UIScreen mainScreen].scale);
+//    scale 由于输出的图不会进行缩放，所以缩放因子等于屏幕的scale即可
+    UIGraphicsBeginImageContextWithOptions(self.frame.size, NO, 0);
     UIBezierPath *bezierPath = [UIBezierPath bezierPathWithCGPath:path];
     [bezierPath closePath];
     [bezierPath addClip];
-    [_image drawAtPoint:CGPointZero];
+    [_image drawInRect:self.bounds];
     UIImage *maskedImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     

@@ -10,6 +10,6 @@
 
 @interface JJCustomLayer : CALayer
 
-+ (JJCustomLayer *)createWithImage:(UIImage *)image scale:(CGFloat)scale degrees:(NSInteger)degrees isClip:(BOOL)isClip;
++ (JJCustomLayer *)createWithImage:(UIImage *)image degrees:(NSInteger)degrees isClip:(BOOL)isClip;
 
 @end

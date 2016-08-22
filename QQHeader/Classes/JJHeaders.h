@@ -10,6 +10,6 @@
 
 @interface JJHeaders : NSObject
 
-+ (UIView *)createHeaderView:(CGFloat)headerWH images:(NSArray *)images imageWH:(CGFloat)imageWH;
++ (UIView *)createHeaderView:(CGFloat)headerWH images:(NSArray *)images;
 
 @end

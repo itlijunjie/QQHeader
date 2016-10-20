@@ -13,7 +13,7 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
 
 @implementation JJHeaders
 
-+ (UIView *)createHeaderView:(CGFloat)headerWH images:(NSArray *)images
++ (UIView *)createHeaderView:(CGFloat)headerWH images:(NSArray<UIImage *> *)images;
 {
     if (!images || [images count] <= 0) {
         return nil;
@@ -47,7 +47,7 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
     return view;
 }
 
-+ (UIView *)getView1:(CGFloat)headerWH images:(NSArray *)images
++ (UIView *)getView1:(CGFloat)headerWH images:(NSArray<UIImage *> *)images
 {
     CGFloat diameter = headerWH;
     CGFloat r = diameter / 2;

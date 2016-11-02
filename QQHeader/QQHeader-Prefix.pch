@@ -1,16 +1,15 @@
 //
-//  Prefix header
+//  QQHeader-Prefix.pch
+//  QQHeaderDemo
 //
-//  The contents of this file are implicitly included at the beginning of every source file.
+//  Created by lijunjie on 02/11/2016.
+//  Copyright © 2016 GagSquad. All rights reserved.
 //
 
-#import <Availability.h>
+#ifndef QQHeader_Prefix_pch
+#define QQHeader_Prefix_pch
 
-#ifndef __IPHONE_5_0
-#warning "This project uses features only available in iOS SDK 5.0 and later."
-#endif
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-#ifdef __OBJC__
-    #import <UIKit/UIKit.h>
-    #import <Foundation/Foundation.h>
-#endif
+#endif /* QQHeader_Prefix_pch */

@@ -7,9 +7,14 @@
 <img src="https://raw.githubusercontent.com/itlijunjie/QQHeader/master/ScreenShot.png" width="320px">
 ## Installation
 手动添加Classes文件中的类。
-使用CocoaPods集成
-## CocoaPods
+### CocoaPods
+<pre>
 pod 'QQHeader'
+</pre>
+### Carthage
+<pre>
+github "itlijunjie/QQHeader"
+</pre>
 ## 联系方式
 QQ：470058952</br>
 我的微信：</br>

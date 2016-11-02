@@ -74,7 +74,7 @@
 		0E874B021DC9D30700428326 /* 3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3@2x.png"; sourceTree = "<group>"; };
 		0E874B031DC9D30700428326 /* 4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4@3x.png"; sourceTree = "<group>"; };
 		0E874B091DC9D3B600428326 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		0E874B0A1DC9D3B600428326 /* QQHeader.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QQHeader.podspec; sourceTree = "<group>"; };
+		0E874B0A1DC9D3B600428326 /* QQHeader.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = QQHeader.podspec; sourceTree = "<group>"; };
 		0E874B0B1DC9D3B600428326 /* QQHeader.podspec.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QQHeader.podspec.json; sourceTree = "<group>"; };
 		0E874B101DC9D40D00428326 /* JJCustomLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCustomLayer.h; sourceTree = "<group>"; };
 		0E874B111DC9D40D00428326 /* JJCustomLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCustomLayer.m; sourceTree = "<group>"; };
@@ -86,6 +86,7 @@
 		0E874B211DC9D43D00428326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E874B311DC9D56300428326 /* QQHeader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QQHeader-Prefix.pch"; sourceTree = "<group>"; };
 		0E874B441DC9D84700428326 /* QQHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQHeader.h; sourceTree = "<group>"; };
+		0E874B461DC9DBAF00428326 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +111,7 @@
 		0E874ACE1DC9D1A900428326 = {
 			isa = PBXGroup;
 			children = (
+				0E874B461DC9DBAF00428326 /* README.md */,
 				0E874B091DC9D3B600428326 /* LICENSE */,
 				0E874B0A1DC9D3B600428326 /* QQHeader.podspec */,
 				0E874B0B1DC9D3B600428326 /* QQHeader.podspec.json */,

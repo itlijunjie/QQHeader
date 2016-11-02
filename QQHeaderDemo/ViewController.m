@@ -7,8 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "JJCustomLayer.h"
-#import "JJHeaders.h"
 
 @interface ViewController ()
 

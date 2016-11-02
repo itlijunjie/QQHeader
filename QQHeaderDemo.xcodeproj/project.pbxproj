@@ -29,6 +29,7 @@
 		0E874B2E1DC9D50700428326 /* JJCustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E874B111DC9D40D00428326 /* JJCustomLayer.m */; };
 		0E874B2F1DC9D50700428326 /* JJHeaders.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E874B131DC9D40D00428326 /* JJHeaders.m */; };
 		0E874B301DC9D50700428326 /* JJHeadersConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E874B151DC9D40D00428326 /* JJHeadersConfig.m */; };
+		0E874B451DC9D84700428326 /* QQHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E874B441DC9D84700428326 /* QQHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		0E874B1E1DC9D43D00428326 /* QQHeader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QQHeader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E874B211DC9D43D00428326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E874B311DC9D56300428326 /* QQHeader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QQHeader-Prefix.pch"; sourceTree = "<group>"; };
+		0E874B441DC9D84700428326 /* QQHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 		0E874B0F1DC9D40D00428326 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0E874B441DC9D84700428326 /* QQHeader.h */,
 				0E874B101DC9D40D00428326 /* JJCustomLayer.h */,
 				0E874B111DC9D40D00428326 /* JJCustomLayer.m */,
 				0E874B121DC9D40D00428326 /* JJHeaders.h */,
@@ -195,6 +198,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E874B451DC9D84700428326 /* QQHeader.h in Headers */,
 				0E874B2B1DC9D4F000428326 /* JJCustomLayer.h in Headers */,
 				0E874B2C1DC9D4F000428326 /* JJHeaders.h in Headers */,
 				0E874B2D1DC9D4F000428326 /* JJHeadersConfig.h in Headers */,

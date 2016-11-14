@@ -15,6 +15,20 @@ pod 'QQHeader'
 <pre>
 github "itlijunjie/QQHeader"
 </pre>
+##原理和使用方法
+每个头像可以分为一个个的小头像：<br/>
+`JJCustomLayer`就是每个小头像：主要负责头像的裁剪<br/>
+`JJHeaders`就是最终的头像：主要负责计算出每个小头像的center<br/>
+`JJHeadersConfig`主要负责头像参数的配置，目前只配置了裁剪角度的大小<br/>
+<pre>
+使用方法：
+UIView *view = [JJHeaders createHeaderView:viewWH
+                                    images:@[[UIImage imageNamed:@"0"],
+                                             [UIImage imageNamed:@"1"],
+                                             [UIImage imageNamed:@"2"],
+                                             [UIImage imageNamed:@"3"],
+                                             [UIImage imageNamed:@"4"]]];
+</pre>
 ## 联系方式
 QQ：470058952</br>
 我的微信：</br>

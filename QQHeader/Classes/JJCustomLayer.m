@@ -50,7 +50,6 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
 {
     [super drawInContext:context];
     CGContextSetRGBFillColor(context, 0, 0, 1, 1);
-    CGMutablePathRef path = CGPathCreateMutable();
     CGRect bounds = self.bounds;
     CGSize size = bounds.size;
     CGPoint center = CGPointMake(CGRectGetMidX(bounds), CGRectGetMidY(bounds));
@@ -58,8 +57,9 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
     transform = CGAffineTransformTranslate(transform, center.x, center.y);
     transform = CGAffineTransformRotate(transform, radians(_degrees));
     transform = CGAffineTransformTranslate(transform, -center.x, -center.y);
+    CGMutablePathRef path = CGPathCreateMutable();
     if (_isClip) {
-        CGPathAddArc(path, &transform, size.width / 2, size.height / 2, size.width / 2, radians((90 - kHeaderClipHalfAngle)), radians(90 + kHeaderClipHalfAngle), 1);
+        CGPathAddArc(path, &transform, size.width / 2, size.height / 2, size.width / 2, radians((90 - kHeaderClipHalfAngle)), radians(90 + kHeaderClipHalfAngle), true);
         CGPathAddArcToPoint(path,&transform,
                             size.width / 2,
                             size.height / 2 + (size.width / 2 * sin(radians(90 - kHeaderClipHalfAngle)) - size.width / 2 * sin(radians(kHeaderClipHalfAngle)) * tan(radians(kHeaderClipHalfAngle))),
@@ -67,7 +67,7 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
                             size.height / 2 + size.width / 2 * sin(radians(90 - kHeaderClipHalfAngle)),
                             size.width / 2);
     } else {
-        CGPathAddArc(path, &transform, size.width / 2, size.height / 2, size.width / 2, radians((90)), radians(90 + 0.01), 1);
+        CGPathAddArc(path, &transform, size.width / 2, size.height / 2, size.width / 2, radians((90)), radians(90 + 0.01), true);
     }
     
 //    scale 由于输出的图不会进行缩放，所以缩放因子等于屏幕的scale即可

@@ -30,6 +30,17 @@
 		0E874B2F1DC9D50700428326 /* JJHeaders.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E874B131DC9D40D00428326 /* JJHeaders.m */; };
 		0E874B301DC9D50700428326 /* JJHeadersConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E874B151DC9D40D00428326 /* JJHeadersConfig.m */; };
 		0E874B451DC9D84700428326 /* QQHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E874B441DC9D84700428326 /* QQHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EF079C81E77C904005155EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF079C71E77C904005155EB /* AppDelegate.swift */; };
+		0EF079CA1E77C904005155EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF079C91E77C904005155EB /* ViewController.swift */; };
+		0EF079CD1E77C904005155EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF079CB1E77C904005155EB /* Main.storyboard */; };
+		0EF079CF1E77C904005155EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EF079CE1E77C904005155EB /* Assets.xcassets */; };
+		0EF079D21E77C904005155EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF079D01E77C904005155EB /* LaunchScreen.storyboard */; };
+		0EF079D71E77C91A005155EB /* QQHeader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E874B1E1DC9D43D00428326 /* QQHeader.framework */; };
+		0EF079DE1E77C959005155EB /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EF079D91E77C959005155EB /* 0.png */; };
+		0EF079DF1E77C959005155EB /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EF079DA1E77C959005155EB /* 1@2x.png */; };
+		0EF079E01E77C959005155EB /* 2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EF079DB1E77C959005155EB /* 2@3x.png */; };
+		0EF079E11E77C959005155EB /* 3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EF079DC1E77C959005155EB /* 3@2x.png */; };
+		0EF079E21E77C959005155EB /* 4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EF079DD1E77C959005155EB /* 4@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +98,18 @@
 		0E874B311DC9D56300428326 /* QQHeader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QQHeader-Prefix.pch"; sourceTree = "<group>"; };
 		0E874B441DC9D84700428326 /* QQHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQHeader.h; sourceTree = "<group>"; };
 		0E874B461DC9DBAF00428326 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0EF079C51E77C903005155EB /* QQHeaderSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQHeaderSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF079C71E77C904005155EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0EF079C91E77C904005155EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0EF079CC1E77C904005155EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0EF079CE1E77C904005155EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0EF079D11E77C904005155EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0EF079D31E77C904005155EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EF079D91E77C959005155EB /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		0EF079DA1E77C959005155EB /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1@2x.png"; sourceTree = "<group>"; };
+		0EF079DB1E77C959005155EB /* 2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2@3x.png"; sourceTree = "<group>"; };
+		0EF079DC1E77C959005155EB /* 3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3@2x.png"; sourceTree = "<group>"; };
+		0EF079DD1E77C959005155EB /* 4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +128,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0EF079C21E77C903005155EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF079D71E77C91A005155EB /* QQHeader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -115,6 +146,7 @@
 				0E874B091DC9D3B600428326 /* LICENSE */,
 				0E874B0A1DC9D3B600428326 /* QQHeader.podspec */,
 				0E874B0B1DC9D3B600428326 /* QQHeader.podspec.json */,
+				0EF079C61E77C904005155EB /* QQHeaderSwiftDemo */,
 				0E874AD91DC9D1A900428326 /* QQHeaderDemo */,
 				0E874B1F1DC9D43D00428326 /* QQHeader */,
 				0E874AD81DC9D1A900428326 /* Products */,
@@ -126,6 +158,7 @@
 			children = (
 				0E874AD71DC9D1A900428326 /* QQHeaderDemo.app */,
 				0E874B1E1DC9D43D00428326 /* QQHeader.framework */,
+				0EF079C51E77C903005155EB /* QQHeaderSwiftDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,6 +226,32 @@
 			path = QQHeader;
 			sourceTree = "<group>";
 		};
+		0EF079C61E77C904005155EB /* QQHeaderSwiftDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0EF079D81E77C959005155EB /* Resources */,
+				0EF079C71E77C904005155EB /* AppDelegate.swift */,
+				0EF079C91E77C904005155EB /* ViewController.swift */,
+				0EF079CB1E77C904005155EB /* Main.storyboard */,
+				0EF079CE1E77C904005155EB /* Assets.xcassets */,
+				0EF079D01E77C904005155EB /* LaunchScreen.storyboard */,
+				0EF079D31E77C904005155EB /* Info.plist */,
+			);
+			path = QQHeaderSwiftDemo;
+			sourceTree = "<group>";
+		};
+		0EF079D81E77C959005155EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0EF079D91E77C959005155EB /* 0.png */,
+				0EF079DA1E77C959005155EB /* 1@2x.png */,
+				0EF079DB1E77C959005155EB /* 2@3x.png */,
+				0EF079DC1E77C959005155EB /* 3@2x.png */,
+				0EF079DD1E77C959005155EB /* 4@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -247,6 +306,23 @@
 			productReference = 0E874B1E1DC9D43D00428326 /* QQHeader.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		0EF079C41E77C903005155EB /* QQHeaderSwiftDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EF079D41E77C904005155EB /* Build configuration list for PBXNativeTarget "QQHeaderSwiftDemo" */;
+			buildPhases = (
+				0EF079C11E77C903005155EB /* Sources */,
+				0EF079C21E77C903005155EB /* Frameworks */,
+				0EF079C31E77C903005155EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QQHeaderSwiftDemo;
+			productName = QQHeaderSwiftDemo;
+			productReference = 0EF079C51E77C903005155EB /* QQHeaderSwiftDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -254,7 +330,8 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = JJ;
-				LastUpgradeCheck = 0810;
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = GagSquad;
 				TargetAttributes = {
 					0E874AD61DC9D1A900428326 = {
@@ -263,6 +340,10 @@
 					};
 					0E874B1D1DC9D43D00428326 = {
 						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					0EF079C41E77C903005155EB = {
+						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -282,6 +363,7 @@
 			targets = (
 				0E874AD61DC9D1A900428326 /* QQHeaderDemo */,
 				0E874B1D1DC9D43D00428326 /* QQHeader */,
+				0EF079C41E77C903005155EB /* QQHeaderSwiftDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -312,6 +394,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0EF079C31E77C903005155EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF079E01E77C959005155EB /* 2@3x.png in Resources */,
+				0EF079DE1E77C959005155EB /* 0.png in Resources */,
+				0EF079E21E77C959005155EB /* 4@3x.png in Resources */,
+				0EF079D21E77C904005155EB /* LaunchScreen.storyboard in Resources */,
+				0EF079DF1E77C959005155EB /* 1@2x.png in Resources */,
+				0EF079CF1E77C904005155EB /* Assets.xcassets in Resources */,
+				0EF079E11E77C959005155EB /* 3@2x.png in Resources */,
+				0EF079CD1E77C904005155EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -335,6 +432,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0EF079C11E77C903005155EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF079CA1E77C904005155EB /* ViewController.swift in Sources */,
+				0EF079C81E77C904005155EB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -352,6 +458,22 @@
 				0E874AE41DC9D1A900428326 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0EF079CB1E77C904005155EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EF079CC1E77C904005155EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0EF079D01E77C904005155EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EF079D11E77C904005155EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -375,6 +497,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -422,6 +545,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -517,6 +641,35 @@
 			};
 			name = Release;
 		};
+		0EF079D51E77C904005155EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QQHeaderSwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GagSquad.QQHeaderSwiftDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0EF079D61E77C904005155EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QQHeaderSwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GagSquad.QQHeaderSwiftDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -546,6 +699,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		0EF079D41E77C904005155EB /* Build configuration list for PBXNativeTarget "QQHeaderSwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EF079D51E77C904005155EB /* Debug */,
+				0EF079D61E77C904005155EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

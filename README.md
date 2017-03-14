@@ -22,6 +22,7 @@ github "itlijunjie/QQHeader"
 `JJHeadersConfig`主要负责头像参数的配置，目前只配置了裁剪角度的大小<br/>
 
 使用方法：
+Objective-C
 ```objective-c
 UIView *view = [JJHeaders createHeaderView:viewWH
                                     images:@[[UIImage imageNamed:@"0"],
@@ -29,6 +30,16 @@ UIView *view = [JJHeaders createHeaderView:viewWH
                                              [UIImage imageNamed:@"2"],
                                              [UIImage imageNamed:@"3"],
                                              [UIImage imageNamed:@"4"]]];
+```
+Swift
+```swift
+let view = JJHeaders.createHeaderView(viewWH, images: [
+                                                                UIImage(named: "0")!,
+                                                                UIImage(named: "1")!,
+                                                                UIImage(named: "2")!,
+                                                                UIImage(named: "3")!,
+                                                                UIImage(named: "4")!
+                                                                ])
 ```
 ## 联系方式
 QQ：470058952</br>

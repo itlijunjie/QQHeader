@@ -15,14 +15,12 @@ pod 'QQHeader'
 ```ogdl
 github "itlijunjie/QQHeader"
 ```
-##原理和使用方法
+## 原理和使用方法
 每个头像可以分为一个个的小头像：<br/>
 `JJCustomLayer`就是每个小头像：主要负责头像的裁剪<br/>
 `JJHeaders`就是最终的头像：主要负责计算出每个小头像的center<br/>
 `JJHeadersConfig`主要负责头像参数的配置，目前只配置了裁剪角度的大小<br/>
-
-使用方法：
-Objective-C
+### Objective-C
 ```objective-c
 UIView *view = [JJHeaders createHeaderView:viewWH
                                     images:@[[UIImage imageNamed:@"0"],
@@ -31,7 +29,7 @@ UIView *view = [JJHeaders createHeaderView:viewWH
                                              [UIImage imageNamed:@"3"],
                                              [UIImage imageNamed:@"4"]]];
 ```
-Swift
+### Swift
 ```swift
 let view = JJHeaders.createHeaderView(viewWH, images: [
                                                                 UIImage(named: "0")!,
@@ -45,5 +43,5 @@ let view = JJHeaders.createHeaderView(viewWH, images: [
 QQ：470058952</br>
 我的微信：</br>
 <img src="https://raw.githubusercontent.com/itlijunjie/image/master/微信.png" width="200px">
-##License
+## License
 QQHeader is under [WTFPL](http://www.wtfpl.net/). You can do what the fuck you want with QQHeader. See [LICENSE](LICENSE) file for more info.

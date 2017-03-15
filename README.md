@@ -4,7 +4,7 @@
 
 一个高仿QQ讨论组头像的实现
 ## Preview
-<img src="https://raw.githubusercontent.com/itlijunjie/QQHeader/master/ScreenShot.png" width="320px">
+<img src="https://raw.githubusercontent.com/itlijunjie/QQHeader/master/ScreenShot.png" width="320px"/></br>
 ## Installation
 手动添加Classes文件中的类。
 ### CocoaPods
@@ -42,6 +42,6 @@ let view = JJHeaders.createHeaderView(viewWH, images: [
 ## 联系方式
 QQ：470058952</br>
 我的微信：</br>
-<img src="https://raw.githubusercontent.com/itlijunjie/image/master/微信.png" width="200px">
+<img src="https://raw.githubusercontent.com/itlijunjie/image/master/微信.png" width="200px" /></br>
 ## License
 QQHeader is under [WTFPL](http://www.wtfpl.net/). You can do what the fuck you want with QQHeader. See [LICENSE](LICENSE) file for more info.

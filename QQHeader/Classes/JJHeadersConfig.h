@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#define kHeaderClipHalfAngle [JJHeadersConfig share].headerClipHalfAngle
-
 @interface JJHeadersConfig : NSObject
 
 

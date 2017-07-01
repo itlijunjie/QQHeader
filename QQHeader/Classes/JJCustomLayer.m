@@ -58,13 +58,14 @@ static inline float radians(double degrees) { return degrees * M_PI / 180; }
     transform = CGAffineTransformRotate(transform, radians(_degrees));
     transform = CGAffineTransformTranslate(transform, -center.x, -center.y);
     CGMutablePathRef path = CGPathCreateMutable();
+    CGFloat headerClipHalfAngle = [JJHeadersConfig share].headerClipHalfAngle;
     if (_isClip) {
-        CGPathAddArc(path, &transform, size.width / 2, size.height / 2, size.width / 2, radians((90 - kHeaderClipHalfAngle)), radians(90 + kHeaderClipHalfAngle), true);
+        CGPathAddArc(path, &transform, size.width / 2, size.height / 2, size.width / 2, radians((90 - headerClipHalfAngle)), radians(90 + headerClipHalfAngle), true);
         CGPathAddArcToPoint(path,&transform,
                             size.width / 2,
-                            size.height / 2 + (size.width / 2 * sin(radians(90 - kHeaderClipHalfAngle)) - size.width / 2 * sin(radians(kHeaderClipHalfAngle)) * tan(radians(kHeaderClipHalfAngle))),
-                            size.width / 2 + size.width / 2 * sin(radians(kHeaderClipHalfAngle)),
-                            size.height / 2 + size.width / 2 * sin(radians(90 - kHeaderClipHalfAngle)),
+                            size.height / 2 + (size.width / 2 * sin(radians(90 - headerClipHalfAngle)) - size.width / 2 * sin(radians(headerClipHalfAngle)) * tan(radians(headerClipHalfAngle))),
+                            size.width / 2 + size.width / 2 * sin(radians(headerClipHalfAngle)),
+                            size.height / 2 + size.width / 2 * sin(radians(90 - headerClipHalfAngle)),
                             size.width / 2);
     } else {
         CGPathAddArc(path, &transform, size.width / 2, size.height / 2, size.width / 2, radians((90)), radians(90 + 0.01), true);

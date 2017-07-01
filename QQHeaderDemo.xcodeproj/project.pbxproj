@@ -95,7 +95,6 @@
 		0E874B151DC9D40D00428326 /* JJHeadersConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJHeadersConfig.m; sourceTree = "<group>"; };
 		0E874B1E1DC9D43D00428326 /* QQHeader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QQHeader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E874B211DC9D43D00428326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E874B311DC9D56300428326 /* QQHeader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QQHeader-Prefix.pch"; sourceTree = "<group>"; };
 		0E874B441DC9D84700428326 /* QQHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQHeader.h; sourceTree = "<group>"; };
 		0E874B461DC9DBAF00428326 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0EF079C51E77C903005155EB /* QQHeaderSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQHeaderSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -221,7 +220,6 @@
 			children = (
 				0E874B0F1DC9D40D00428326 /* Classes */,
 				0E874B211DC9D43D00428326 /* Info.plist */,
-				0E874B311DC9D56300428326 /* QQHeader-Prefix.pch */,
 			);
 			path = QQHeader;
 			sourceTree = "<group>";
@@ -605,7 +603,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "./QQHeader/QQHeader-Prefix.pch";
 				INFOPLIST_FILE = QQHeader/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -628,7 +625,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "./QQHeader/QQHeader-Prefix.pch";
 				INFOPLIST_FILE = QQHeader/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

@@ -6,7 +6,7 @@
 //  Copyright © 2016年 ljj. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import UIKit;
 
 @interface JJHeaders : NSObject
 

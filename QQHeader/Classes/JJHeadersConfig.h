@@ -6,7 +6,8 @@
 //  Copyright © 2016年 ljj. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
+@import CoreGraphics;
 
 @interface JJHeadersConfig : NSObject
 

@@ -6,7 +6,8 @@
 //  Copyright © 2015年 ljj. All rights reserved.
 //
 
-#import <QuartzCore/QuartzCore.h>
+@import QuartzCore;
+@import UIKit;
 
 @interface JJCustomLayer : CALayer
 

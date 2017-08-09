@@ -1,6 +1,8 @@
 ## QQHeader
 [![Version](https://img.shields.io/cocoapods/v/QQHeader.svg?style=flat)](http://cocoapods.org/pods/QQHeader)
 [![Platform](https://img.shields.io/cocoapods/p/QQHeader.svg?style=flat)](http://cocoapods.org/pods/QQHeader)
+[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![build](https://travis-ci.org/itlijunjie/QQHeader.svg?branch=master)](https://travis-ci.org/itlijunjie/QQHeader)
 
 一个高仿QQ讨论组头像的实现
 ## Preview

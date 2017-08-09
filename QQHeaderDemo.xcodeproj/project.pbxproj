@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E2A105B1F3ACF390000869A /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 0E2A105A1F3ACF390000869A /* .travis.yml */; };
 		0E874ADC1DC9D1A900428326 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E874ADB1DC9D1A900428326 /* main.m */; };
 		0E874ADF1DC9D1A900428326 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E874ADE1DC9D1A900428326 /* AppDelegate.m */; };
 		0E874AE21DC9D1A900428326 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E874AE11DC9D1A900428326 /* ViewController.m */; };
@@ -68,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E2A105A1F3ACF390000869A /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		0E874AD71DC9D1A900428326 /* QQHeaderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQHeaderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E874ADB1DC9D1A900428326 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0E874ADD1DC9D1A900428326 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		0E874ACE1DC9D1A900428326 = {
 			isa = PBXGroup;
 			children = (
+				0E2A105A1F3ACF390000869A /* .travis.yml */,
 				0E874B461DC9DBAF00428326 /* README.md */,
 				0E874B091DC9D3B600428326 /* LICENSE */,
 				0E874B0A1DC9D3B600428326 /* QQHeader.podspec */,
@@ -377,6 +380,7 @@
 				0E874B081DC9D30700428326 /* 4@3x.png in Resources */,
 				0E874AFD1DC9D2E200428326 /* LaunchScreen.storyboard in Resources */,
 				0E874B051DC9D30700428326 /* 1@2x.png in Resources */,
+				0E2A105B1F3ACF390000869A /* .travis.yml in Resources */,
 				0E874AE71DC9D1A900428326 /* Assets.xcassets in Resources */,
 				0E874B0C1DC9D3B600428326 /* LICENSE in Resources */,
 				0E874B071DC9D30700428326 /* 3@2x.png in Resources */,

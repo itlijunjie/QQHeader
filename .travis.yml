@@ -1,0 +1,6 @@
+osx_image: xcode8.3
+language: objective-c
+xcode_project: QQHeaderDemo.xcodeproj
+xcode_schemes: QQHeader
+
+#profile: path/Podfile
